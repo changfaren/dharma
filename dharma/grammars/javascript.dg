@@ -1,0 +1,10 @@
+%%% control the minimum number of variants specified in VARIANCE section will be generated.
+%const% VARIANCE_MIN := 4
+
+%%% section value is not mandatory
+statement :=
+    "hello somebody!"
+
+%section% := variance
+main :=
+    statement

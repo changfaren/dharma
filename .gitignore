@@ -19,3 +19,8 @@ docs/_build/
 .tox
 .pytest_cache/
 .coverage
+
+# Others
+.idea
+out/
+venv/
