@@ -1,5 +1,7 @@
-%%% control the minimum number of variants specified in VARIANCE section will be generated.
+%%% control the minimum number of variants specified
+%%% in VARIANCE section will be generated.
 %const% VARIANCE_MIN := 4
+%const% VARIANCE_MAX := 8
 
 %%% section value is not mandatory
 statement :=
@@ -7,4 +9,11 @@ statement :=
 
 %section% := variance
 main :=
-    statement
+    "hello cow!"
+
+%%% leave a newline to separate two identifier!
+main2 :=
+    "hello Wit!"
+
+main3 :=
+    "hello clause!"
