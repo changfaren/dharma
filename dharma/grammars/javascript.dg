@@ -17,3 +17,12 @@ main2 :=
 
 main3 :=
     "hello clause!"
+
+%%% D:A refers to an identifier A in D.dg file
+%%% In this case, we refer to identifier object
+%%% in common.dg, which is in the same directory
+%%% as javascript.dg
+%%% It is interesting to note that common.dg
+%%% does not contain a variance section.
+common :=
+    +common:object+
