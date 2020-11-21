@@ -1,12 +1,16 @@
 %%% control the minimum number of variants specified
 %%% in VARIANCE section will be generated.
-%const% VARIANCE_MIN := 4
-%const% VARIANCE_MAX := 8
+%const% VARIANCE_MIN := 14
+%const% VARIANCE_MAX := 18
 
 %%% section value is not mandatory
 statement :=
     "hello somebody!"
 
+function_arg :=
+    a
+    b
+    c
 %section% := variance
 main :=
     "hello cow!"
@@ -26,3 +30,16 @@ main3 :=
 %%% does not contain a variance section.
 common :=
     +common:object+
+
+%%% Test correctness of basic javascript syntax
+
+%%% function with arbitrary number of arguments
+%%% return the first argument
+
+function_arb_args :=
+    function f1(a0%repeat%(,a+common:int+)){return a0;}
+
+%%% I am going to leave this file to do further testing on js function.
+%%% The test will involve variable and a context.
+%%% It would be cleaner to have one separate file for this new test.
+%%% Bye javascript.dg!

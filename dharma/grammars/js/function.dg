@@ -1,0 +1,21 @@
+
+%%% This is the second dg file created after javascript.dg
+%%% Inspired by test.dg, the purpose of this dg is as follows:
+%%% - create a getter function
+%%% - create a variable
+%%% - pass the variable to function
+%%% - check the return value of function is equal to the arg.
+
+
+%section% := variable
+
+arg :=
+    let @arg@ = +common:int+
+
+func :=
+    function @func@(a){return a;}
+
+%section% := variance
+
+main :=
+    !arg! === !func!(!arg!)
