@@ -1,0 +1,14 @@
+%%% This grammar file intends to test the dharma generator in situation where a statement is self-referential.
+%%% Obviously, the generator would never be able to resolve the symbol.
+%%%
+%%% Result: the generator would stop diving deeper at level 257, a constraint set by LEAF_TRIGGER = 256
+
+%section% := value
+
+statement :=
+    +statement+
+
+%section% := variance
+
+main :=
+    +statement+

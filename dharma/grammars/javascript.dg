@@ -2,6 +2,7 @@
 %%% in VARIANCE section will be generated.
 %const% VARIANCE_MIN := 14
 %const% VARIANCE_MAX := 18
+%const% MAX_REPEAT_POWER := 3
 
 %%% section value is not mandatory, as it is already defined in default grammar common.dg.
 statement :=
