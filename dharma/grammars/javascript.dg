@@ -3,7 +3,7 @@
 %const% VARIANCE_MIN := 14
 %const% VARIANCE_MAX := 18
 
-%%% section value is not mandatory
+%%% section value is not mandatory, as it is already defined in default grammar common.dg.
 statement :=
     "hello somebody!"
 
