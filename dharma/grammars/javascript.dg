@@ -37,7 +37,7 @@ common :=
 %%% return the first argument
 
 function_arb_args :=
-    function f1(a0%repeat%(,a+common:int+)){return a0;}
+    function f1(%repeat%(a+common:int+,",", nodups)){return a0;}
 
 %%% I am going to leave this file to do further testing on js function.
 %%% The test will involve variable and a context.
